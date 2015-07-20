@@ -36,12 +36,13 @@ else if($_POST['level']=='12')
 		$filepath = './image/image_sp_12.png';
 	}
 }
-header('Content-Type: application/octet-stream');
-header("Content-Transfer-Encoding: Binary"); 
-header("Content-disposition: attachment; filename=\"" . basename($filepath) . "\"");
 
-$account = $_POST['account'];
-sp10hard($account);
+//$s1 = new Snoopy;
+//$s1->fetch("http://iidx.me/" . $account . "/sp/level/10/?page=1&sort=Aversion&l=08");
+//preg_match_all("/\<td class\=\"clear\"\>(.*?)\<\/td\>/",$s1->results,$c1);
+
+
+sp10hard($account,$filepath);
 if($_POST['level']=='10')
 {
 	if(isset($_POST['hard']))
