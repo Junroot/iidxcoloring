@@ -18,16 +18,14 @@
 			<?php if($login == "f"){ ?>
 			<div class="alert alert-danger  alert-dismissible" role="alert"><strong>실패!</strong> iidx.me 계정을 잘못 입력하셨습니다.</div>
 			<?php } ?>
-			<h3><b>beatmania IIDX 자동서열표</b></h3>
+			<h3><b>beatmania IIDX 자동 서열표</b></h3>
 				<div style="padding: 20px 0px;">
 					<form class="form-signin" action="download.php" method="post">
-						<fieldset disabled>
 							<select class="form-control" name="level">
-								<option value="10">SP 10 (다른 레벨은 추후 업데이트 예정)</option>
+								<option value="10">SP 10</option>
 								<option value="11">SP 11</option>
-								<option value="12">SP 12</option>
+								<!-- <option value="12">SP 12</option> -->
 							</select>
-						</fieldset>
 						<label for="inputAccount" class="sr-only">inputAccount</label>
 						<input type="text" id="account" class="form-control" name = "account" placeholder="iidx.me 계정" required="" autofocus="" value="" />
 						<fieldset disabled>
@@ -47,6 +45,7 @@
 							<h4 class="modal-title" id="myModalLabel">업데이트 내역</h4>
 						</div>
 						<div class="modal-body">
+							<p class="text-muted">[ver 0.4]<br>- SP 11 업데이트</p>
 							<p class="text-muted">[ver 0.3.2]<br>- 로그인 오류 알림창 업데이트</p>
 							<p class="text-muted">[ver 0.3.1]<br>- 인코딩 문제 해결</p>
 							<p class="text-muted">[ver 0.3]<br>- SP 10 업데이트</p>
@@ -57,7 +56,7 @@
 		</div>
 		<footer class="footer">
 				<div style="float:left"><p class="text-muted" ><b>Developer</b>&nbsp;&nbsp;&nbsp;&nbsp;<a href = "https://twitter.com/__root____">@__root____</a></p></div>
-				<div style="float:right"><p class="text-muted" style="text-align:right"><a id = "version" href = "#">ver 0.3.2</a></p></div>
+				<div style="float:right"><p class="text-muted" style="text-align:right"><a id = "version" href = "#">ver 0.4</a></p></div>
 		</footer>
 		
 		<script>
