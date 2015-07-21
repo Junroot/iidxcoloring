@@ -1,6 +1,7 @@
 <?php
 include 'Snoopy.class.php';
 include 'sp10hard.php';
+include 'sp11hard.php';
 
 $filepath = './image/image_sp_10_hard.png';
 if($_POST['level']=='10')
@@ -42,16 +43,20 @@ else if($_POST['level']=='12')
 //preg_match_all("/\<td class\=\"clear\"\>(.*?)\<\/td\>/",$s1->results,$c1);
 
 
-sp10hard($account,$filepath);
 if($_POST['level']=='10')
 {
-	if(isset($_POST['hard']))
+	sp10hard($account,$filepath);
+	/*if(isset($_POST['hard']))
 	{
 		sp10hard($account);
 	}
 	else
 	{
 		sp10hard($account);
-	}
+	}*/
+}
+else if($_POST['level']=='11')
+{
+	sp11hard($account,$filepath);
 }
 ?>
