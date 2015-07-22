@@ -1874,7 +1874,7 @@
 			//115
 			$i = 115;
 			$x = 0;
-			$y = 38;
+			$y = 28;
 			if ($c1[0][$i] == "FULL COMBO")
 				ImagefilledRectangle($img,131*$x+161,32*$y+61,131*$x+161+18,32*$y+61+30,0xFF66CC);
 			else if ($c1[0][$i] == "EX-HARD CLEAR")
