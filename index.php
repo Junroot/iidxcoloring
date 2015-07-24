@@ -24,7 +24,7 @@
 							<select class="form-control" name="level">
 								<option value="10">SP 10</option>
 								<option value="11">SP 11</option>
-								<!-- <option value="12">SP 12</option> -->
+								<option value="12">SP 12</option>
 							</select>
 						<label for="inputAccount" class="sr-only">inputAccount</label>
 						<input type="text" id="account" class="form-control" name = "account" placeholder="iidx.me 계정" required="" autofocus="" value="" />
@@ -45,6 +45,7 @@
 							<h4 class="modal-title" id="myModalLabel">업데이트 내역</h4>
 						</div>
 						<div class="modal-body">
+							<p class="text-muted">[ver 0.5]<br>- SP 12 업데이트</p>
 							<p class="text-muted">[ver 0.4]<br>- SP 11 업데이트</p>
 							<p class="text-muted">[ver 0.3.2]<br>- 로그인 오류 알림창 업데이트</p>
 							<p class="text-muted">[ver 0.3.1]<br>- 인코딩 문제 해결</p>
@@ -56,7 +57,7 @@
 		</div>
 		<footer class="footer">
 				<div style="float:left"><p class="text-muted" ><b>Developer</b>&nbsp;&nbsp;&nbsp;&nbsp;<a href = "https://twitter.com/__root____">@__root____</a></p></div>
-				<div style="float:right"><p class="text-muted" style="text-align:right"><a id = "version" href = "#">ver 0.4</a></p></div>
+				<div style="float:right"><p class="text-muted" style="text-align:right"><a id = "version" href = "#">ver 0.5</a></p></div>
 		</footer>
 		
 		<script>

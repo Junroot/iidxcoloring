@@ -2,6 +2,7 @@
 include 'Snoopy.class.php';
 include 'sp10hard.php';
 include 'sp11hard.php';
+include 'sp12hard.php';
 
 $filepath = './image/image_sp_10_hard.png';
 if($_POST['level']=='10')
@@ -38,11 +39,6 @@ else if($_POST['level']=='12')
 	}
 }
 
-//$s1 = new Snoopy;
-//$s1->fetch("http://iidx.me/" . $account . "/sp/level/10/?page=1&sort=Aversion&l=08");
-//preg_match_all("/\<td class\=\"clear\"\>(.*?)\<\/td\>/",$s1->results,$c1);
-
-
 if($_POST['level']=='10')
 {
 	sp10hard($account,$filepath);
@@ -58,5 +54,9 @@ if($_POST['level']=='10')
 else if($_POST['level']=='11')
 {
 	sp11hard($account,$filepath);
+}
+else if($_POST['level']=='12')
+{
+	sp12hard($account,$filepath);
 }
 ?>
